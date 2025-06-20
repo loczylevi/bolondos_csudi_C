@@ -66,7 +66,7 @@ int main()
 
 
 ```
-https://infojegyzet.hu/vizsgafeladatok/okj-programozas/rendszeruzemelteto-191008/
+### https://infojegyzet.hu/vizsgafeladatok/okj-programozas/rendszeruzemelteto-191008/
 
 ```c
 #include <stdio.h>   // printf, scanf
