@@ -5,7 +5,7 @@ const == fixelni valamit<br>
 olyan mint tuple pythonban nem lehet megváltoztatni <br>
 ha elöl van a constant akkor jobbra fixál más esetben mindig balra fixál<br>
 ```c
-const int* a; //Nem lehet értéket változtatni
+    const int* a; //Nem lehet értéket változtatni
     int* const b; //Nem lehet pointert változtatni
     int const *c; //Ugyanaz, mint az a, konstans balra hat, ha tud, ha nem jobbra
     
