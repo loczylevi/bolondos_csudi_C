@@ -66,3 +66,8 @@ int main()
 
 
 ```
+https://infojegyzet.hu/vizsgafeladatok/okj-programozas/rendszeruzemelteto-191008/
+
+```c
+
+```
