@@ -31,13 +31,13 @@ int main()
 
     while (fgets(lista[db],100,fj) != NULL)      // fgets() beolvas karaktereket
     {
-        printf("Beolvasott sor: %s", lista[db]);
+        printf("%d. sor: %s",db+1, lista[db]);
         // lista[db] = tomb;
         db += 1;
         
     }
     
-    printf("\nindexelés %s", lista[2]);
+    printf("\n\nindexelés %s", lista[2]);
 
     fclose(fj);
     
