@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>   // printf, scanf
+#include <stdlib.h>   // ez a cuccmok kell a mallochoz  // ez a konyvtár operációs rendszerrel kommunikál (memória lefoglalás)
 
 int main()
 {
@@ -15,9 +15,9 @@ int main()
 
 
 
-    fj = fopen("EUcsatlakozas.txt","r");
+    fj = fopen("EUcsatlakozas.txt","r");          // pythonban az open() függvényben a "r" az default DE A BOLONDOS C-BEN NEM DEFAULT A "r" READING AZ fopen() függvénynél
 
-    if (fj == NULL)
+    if (fj == NULL)   // try catch ha nem létezik a fálj
     {
         printf("Hiba: a fájlt nem sikerült megnyitni!\n");
         return 1;
@@ -29,7 +29,7 @@ int main()
     
     int db = 0;
 
-    while (fgets(lista[db],100,fj) != NULL)
+    while (fgets(lista[db],100,fj) != NULL)      // fgets() beolvas karaktereket
     {
         printf("Beolvasott sor: %s", lista[db]);
         // lista[db] = tomb;
@@ -37,16 +37,16 @@ int main()
         
     }
     
-    printf("\nBeolvasott sor: %s", lista[0]);
+    printf("\nindexelés %s", lista[2]);
 
     fclose(fj);
     
     
     for(int i=0;i < 100; i++){
-        free(lista[i]);
+        free(lista[i]);                // mivel 100 db. memoria cellát foglaltunk le ezért mind a 100-at el is kell engedni [garbage collection saját magadnak]
     }
 
-    free(lista);
+    free(lista);  // ha malloc() használunk el is kell engedni a foglalásokat!!!!
     
     return 0;
 }
