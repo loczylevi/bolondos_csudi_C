@@ -1,4 +1,4 @@
-# csudi_C
+# csudi bolondos C
 # https://infoc.eet.bme.hu/ea01/
 
 const == fixelni valamit<br>
