@@ -1,5 +1,16 @@
 # csudi_C
-// https://infoc.eet.bme.hu/ea01/
+# https://infoc.eet.bme.hu/ea01/
+
+```c
+const int* a; //Nem lehet értéket változtatni
+    int* const b; //Nem lehet pointert változtatni
+    int const *c; //Ugyanaz, mint az a, konstans balra hat, ha tud, ha nem jobbra
+    
+    a=5; //Hibás
+    b++; //Hibás
+```
+
+
 
 ```c
 
