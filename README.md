@@ -1,9 +1,9 @@
 # csudi_C
 # https://infoc.eet.bme.hu/ea01/
 
-const == fixelni valamit
-olyan mint tuple pythonban nem lehet megváltoztatni 
-ha elöl van a constant akkor jobbra fixál más esetben mindig balra fixál
+const == fixelni valamit<br>
+olyan mint tuple pythonban nem lehet megváltoztatni <br>
+ha elöl van a constant akkor jobbra fixál más esetben mindig balra fixál<br>
 ```c
 const int* a; //Nem lehet értéket változtatni
     int* const b; //Nem lehet pointert változtatni
