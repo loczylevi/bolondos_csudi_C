@@ -13,17 +13,15 @@ int main()
     }
 
 
-
-
     fj = fopen("EUcsatlakozas.txt","r");          // pythonban az open() függvényben a "r" az default DE A BOLONDOS C-BEN NEM DEFAULT A "r" READING AZ fopen() függvénynél
 
     if (fj == NULL)   // try catch ha nem létezik a fálj
     {
-        printf("Hiba: a fájlt nem sikerült megnyitni!\n");
+        printf("Hiba: Szédül az op rendszer nem találja a targetet!\n");
         return 1;
     }
 
-    printf("Fájl sikeresen megnyitva!\n");
+    printf("Fájl sikeresen megnyitva!\nA porgram nem szédül!\n");
 
 
     
