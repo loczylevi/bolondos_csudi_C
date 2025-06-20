@@ -3,14 +3,13 @@
 
 int main()
 {
-    
+
     FILE* fj;
-
-
-    char** lista2 = (char**) malloc(100*sizeof(char*));
+    
+    char** lista = (char**) malloc(100*sizeof(char*));     // pointerek halmaza memoria cellák lefoglalása
 
     for(int i=0;i < 100; i++){
-        lista2[i] = (char*) malloc(101*sizeof(char));
+        lista[i] = (char*) malloc(101*sizeof(char));   //100 db. pointer lefoglalása
     }
 
 
@@ -30,24 +29,24 @@ int main()
     
     int db = 0;
 
-    while (fgets(lista2[db],100,fj) != NULL)
+    while (fgets(lista[db],100,fj) != NULL)
     {
-        printf("Beolvasott sor: %s", lista2[db]);
-        // lista2[db] = tomb;
+        printf("Beolvasott sor: %s", lista[db]);
+        // lista[db] = tomb;
         db += 1;
         
     }
     
-    printf("\nBeolvasott sor: %s", lista2[0]);
+    printf("\nBeolvasott sor: %s", lista[0]);
 
     fclose(fj);
     
     
     for(int i=0;i < 100; i++){
-        free(lista2[i]);
+        free(lista[i]);
     }
 
-    free(lista2);
+    free(lista);
     
     return 0;
 }
