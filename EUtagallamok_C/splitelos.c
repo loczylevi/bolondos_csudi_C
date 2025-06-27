@@ -5,6 +5,8 @@
 #define szoveg "Ausztria;1995.01.01"  // ez most egy konstans geco [megváltozhatatlan spermium]
 
 #define ha if 
+#define kitores break
+#define amig while 
 
 
 int meddig;
@@ -50,7 +52,7 @@ int main()
         }
         else {
             tarolo[i] = '\0';
-            break;
+            kitores;
         }
     }
        
@@ -62,7 +64,7 @@ int main()
     int z = 0;
     int karakterek_szama = strlen(szoveg);
 
-    while (y <= strlen(szoveg))
+    amig (y <= strlen(szoveg))
     {
         ha (mehet_e == 1)
         {
