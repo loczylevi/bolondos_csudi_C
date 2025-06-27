@@ -57,14 +57,14 @@ int main()
     printf("%s\n", tarolo);
 
     char datum[20];
-    int buzi = 0;
+    int mehet_e = 0;
     int y = 0;
     int z = 0;
     int karakterek_szama = strlen(szoveg);
 
     while (y <= strlen(szoveg))
     {
-        ha (buzi == 1)
+        ha (mehet_e == 1)
         {
     
             // printf("%c",szoveg[y]);
@@ -75,7 +75,7 @@ int main()
 
         ha (szoveg[y] == ';')
         {
-            buzi = 1;
+            mehet_e = 1;
         }
         y++;
     }
