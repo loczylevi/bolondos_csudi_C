@@ -1,4 +1,46 @@
 # csudi bolondos C
+
+## Mi az a buffer overflow veszély C-ben?
+C-ben, ha van egy tömböd:
+
+```c
+char tarolo[10];
+```
+Ez pontosan 10 byte-ot foglal a memóriában, tehát indexelhető:
+```c
+tarolo[0]-tól
+tarolo[9]-ig.
+```
+Ha te mondjuk a tarolo[10]-be próbálsz írni, akkor:
+
+- ismeretlen memóriaterülethez nyúlsz hozzá
+
+- ami memóriasérülést, hibás működést vagy crash-t okozhat
+
+- C nem figyelmeztet erre futásidőben!
+
+# kiküszöbölése strncopy() függvénnyel 
+Ez egy biztonságosabb karaktertömb másoló függvény a C-ben:
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char forras[] = "Hello világ!";
+    char cel[10];
+
+    strncpy(cel, forras, sizeof(cel) - 1);  // max 9 karaktert másolunk
+    cel[9] = '\0';  // biztos lezárjuk
+
+    printf("Eredmény: %s\n", cel);
+
+    return 0;
+}
+
+
+```
+
+
 # https://infoc.eet.bme.hu/ea01/
 
 const == fixelni valamit<br>
