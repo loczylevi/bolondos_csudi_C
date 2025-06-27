@@ -4,6 +4,8 @@
 
 #define szoveg "Ausztria;1995.01.01"  // ez most egy konstans geco [megváltozhatatlan spermium]
 
+#define ha if 
+
 
 int meddig;
 
@@ -37,11 +39,11 @@ int main()
 
 
        // "Ausztria;1995.01.01" 
-        char tarolo[10];
-        char datum2[10];
+        char tarolo[20];
+        char datum2[20];
         int x = 0;
     for (int i = 0; i < meddig; i++) {
-        if (szoveg[i] != ';') 
+        ha (szoveg[i] != ';') 
         {
             tarolo[i] = szoveg[i];
             x++;  
@@ -54,7 +56,7 @@ int main()
        
     printf("%s\n", tarolo);
 
-    char datum[10];
+    char datum[20];
     int buzi = 0;
     int y = 0;
     int z = 0;
@@ -62,7 +64,7 @@ int main()
 
     while (y <= strlen(szoveg))
     {
-        if (buzi == 1)
+        ha (buzi == 1)
         {
     
             // printf("%c",szoveg[y]);
@@ -71,7 +73,7 @@ int main()
             
         }
 
-        if (szoveg[y] == ';')
+        ha (szoveg[y] == ';')
         {
             buzi = 1;
         }
@@ -84,7 +86,7 @@ int main()
 
     for (int i = 0; i <= strlen(datum); i++)
     {
-        if (strlen(datum) == i)
+        ha (strlen(datum) == i)
         {
             printf("\nutcsó: %c",datum[i]);
             datum[i] = '\0';
