@@ -1,5 +1,10 @@
 # csudi bolondos C
 
+## GCC fordito
+```bash
+gcc main.c -o main && ./main
+```
+
 ## Mi az a buffer overflow veszély C-ben?
 C-ben, ha van egy tömböd:
 
