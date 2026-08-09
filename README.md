@@ -7,6 +7,10 @@
 ```bash
 gcc main.c -o main && ./main
 ```
+### GCC fordito + ha matematikai vag kulsos könyvtárakat használsz pluszba
+```bash
+gcc main.c -o main -lm && ./main
+```
 
 ## Mi az a buffer overflow veszély C-ben?
 C-ben, ha van egy tömböd:
