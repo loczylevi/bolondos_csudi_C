@@ -7,7 +7,7 @@
 ```bash
 gcc main.c -o main && ./main
 ```
-### GCC fordito + ha matematikai vag kulsos könyvtárakat használsz pluszba
+### GCC fordito + ha matematikai könyvtárat használsz pluszba
 ```bash
 gcc main.c -o main -lm && ./main
 ```
