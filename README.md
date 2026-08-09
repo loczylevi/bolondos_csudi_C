@@ -1,6 +1,6 @@
 # csudi bolondos C
 
-*A programok írásakor mindig figyeljük arra, hogy emberek olvassák majd azt. Az mellékes, hogy gépek hajtják végre.”*
+*A programok írásakor mindig figyeljük arra,\n hogy emberek olvassák majd azt.\n Az mellékes, hogy gépek hajtják végre.”*
 – Harold Abelson, Gerald Jay Sussman
 
 ## GCC fordito
