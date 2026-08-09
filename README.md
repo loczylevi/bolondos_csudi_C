@@ -1,5 +1,8 @@
 # csudi bolondos C
 
+*A programok írásakor mindig figyeljük arra, hogy emberek olvassák majd azt. Az mellékes, hogy gépek hajtják végre.”*
+– Harold Abelson, Gerald Jay Sussman
+
 ## GCC fordito
 ```bash
 gcc main.c -o main && ./main
