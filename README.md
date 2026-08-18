@@ -12,6 +12,39 @@ gcc main.c -o main && ./main
 gcc main.c -o main -lm && ./main
 ```
 
+
+```c
+
+#include <stdio.h>
+#include <string.h>
+
+
+int main(void)
+{
+  char str[] = "Kon Kon Kitsune";
+  const char *delimiter = " ";
+  
+  char lista[10][17];
+  int index = 0;
+  
+
+  char *tok = strtok(str, delimiter);
+
+
+  while (tok != NULL)
+  {
+    printf("%s\n", tok);
+    strcpy(lista[index], tok);
+    index++;
+
+    tok = strtok(NULL, delimiter);
+  }
+  lista[index][0] = '\0';
+
+}
+
+```
+
 ## Mi az a buffer overflow veszély C-ben?
 C-ben, ha van egy tömböd:
 
