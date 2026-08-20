@@ -1,0 +1,28 @@
+/*
+Készíts programot, mely kiírja az 1 köbméternél kisebb térfogatú, 
+10 cm-ként növekvő sugarú gömbök térfogatait!
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.1415926
+
+int main(){
+    int r = 10;
+
+    while (1)
+    {
+        double volume = ((4.0 *pow(r, 3)*PI))/3;
+        
+        if (volume > 1000000)
+        {
+            break;
+        }
+
+        printf("gömb térgogata: %lf\n", volume);
+        r = r + 10;
+    }
+
+    return 0;
+}
